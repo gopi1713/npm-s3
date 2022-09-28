@@ -1,0 +1,25 @@
+{
+  "name": "@jaaromy/s3-sync",
+  "version": "0.2.7",
+  "description": "Watch a local file, directory, or glob for changes and sync them to an s3 bucket (or bucket and path).",
+  "main": "app.js",
+  "bin": {
+    "s3-sync": "./app.js"
+  },
+  "dependencies": {
+    "bluebird": "^3.5.2",
+    "chokidar": "^2.0.4",
+    "npm": "^6.4.1",
+    "pm2": "^3.2.2",
+    "shelljs": "^0.8.2",
+    "yargs": "^12.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "patch-release": "npm version patch && npm publish && git push --follow-tags"
+  },
+  "author": "Jaaromy Zierse",
+  "repository": "https://github.com/Jaaromy/s3-sync.git",
+  "license": "MIT"
+}
